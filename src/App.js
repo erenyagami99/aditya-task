@@ -1,10 +1,33 @@
 import './App.css';
-import Header from './components/header';
+import Header from './components/Header';
+import Footer from './components/Footer';
+
 function App() {
   return (
     <div className='container'>
       <div>
-       <Header/>
+      <div className='main-container'>
+        <div className='center'>
+          <Header/>
+          <div className='header'>
+            <div className='image-container'>
+              <img src='/images/facebook-icon.png' alt='facebook' />
+              <img src='/images/twitter-icon.png' alt='twitter' />
+              <img src='/images/whatsapp-icon.png' alt='whatsapp' />
+            </div>
+            <button className='button'>Click Here</button>
+          </div>
+          <h1 className="white" style={{ fontSize: "30px" }}>Company Motto</h1>
+          <h1 className='heading'>Company Heading</h1>
+          <p className='white'>Company details and work done and services provided are explained here. These details need to be filled and can be changed again whenever there is requirement...</p>
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <div className='vertical-border'>
+              <button className='button'>Click Here</button>
+            </div>
+            <p className='white'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10,699</p>
+          </div>
+        </div>
+      </div>
         <div className='second-div'>
           <div className='orange-div width-full'>
             <p>Enter the details here</p>
@@ -197,7 +220,7 @@ function App() {
           </div>
         </div>
         <div className='width-full faq-div' style={{marginTop:"200px",paddingBottom:"80px"}}>
-          <div className='width-70 center-div flex'>
+          <div className='person-div center-div flex'>
           <div className='faq-form'>
             <h1 className='white'>Frequently Asked Questions</h1>
             <p className='orange-text'>Question Here</p>
@@ -216,52 +239,7 @@ function App() {
           </div>
         </div>
       </div>
-
-
-      <div className='footer'>
-        <div style={{ borderBottom: "2px solid gray" }}>
-          <div className='width-70 flex space-between center-div' style={{paddingBottom:"20px"}}>
-            <div>
-              <h1>Services</h1>
-              <p>Transport</p>
-              <p>Delivery</p>
-              <p>Goods</p>
-              <p>Communication</p>
-            </div>
-            <div>
-              <h1>Accessories</h1>
-              <p>Building</p>
-              <p>Machines</p>
-              <p>Electricians</p>
-              <p>Media</p>
-            </div>
-            <div>
-              <h1>Electrical</h1>
-              <p>Systems</p>
-              <p>Laptops</p>
-              <p>E-Billings</p>
-            </div>
-            <div>
-              <h1>Social Media</h1>
-              <p>Facebook</p>
-              <p>Twitter</p>
-              <p>LinkedIn</p>
-              <p>Instagram</p>
-            </div>
-          </div>
-        </div>
-        <div className='width-70 flex space-between center-div items-center'>
-          <p>Contact Us On</p>
-          <div>
-            <div className='image-container'>
-              <img src='/images/whatsapp-icon.png' alt='whatsapp' />
-              <img src='/images/facebook-icon.png' alt='facebook' />
-              <img src='/images/twitter-icon.png' alt='twitter' />
-              <img src='/images/whatsapp-icon.png' alt='whatsapp' />
-            </div>
-          </div>
-        </div>
-      </div>
+      <Footer/>
     </div>
   );
 }
