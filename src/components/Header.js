@@ -5,12 +5,11 @@ const Header = () => {
         <div className='header'>
         <div>
           <img className="logo" src='/images/preview.jpg' alt='/' />
-          <p>Company Name</p>
+          <h1 style={{paddingLeft:"10px"}}>URBAN NEST</h1>
         </div>
-        <div style={{gap:"15px"}}>
-          <p>Services</p>
-          <p>Contact</p>
-          <p>List of Goods</p>
+        <div className="services">
+          <p>Make a Call</p>
+          <p>&nbsp;+19-2298</p>
         </div>
         <div className='image-container'>
           <img src='/images/facebook-icon.png' alt='facebook' />
