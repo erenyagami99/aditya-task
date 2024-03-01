@@ -117,9 +117,6 @@
   .card-container {
     flex-direction: column;
   }
-  .gray-div {
-    height: 1700px !important;
-  }
   .services {
     display: none !important;
   }
@@ -664,6 +661,9 @@
 }
 
 @media screen and (max-width: 1100px) {
+  .gray-div {
+    height: 1700px !important;
+  }
   .footer-details {
     flex-direction: column;
     gap: 50px;
