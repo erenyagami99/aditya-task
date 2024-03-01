@@ -5,9 +5,9 @@ const Header = () => {
   return (
     <div className="header">
       <div className="width-70 flex center-div space-between items-center">
-        <div>
+        <div style={{ width: "100px" }}>
           <img className="logo" src="/images/urban-logo.png" alt="/logo" />
-          <h1 className="white" style={{ paddingLeft: "10px" }}>
+          <h1 className="white font-20" style={{ paddingLeft: "10px" }}>
             URBAN NEST
           </h1>
         </div>
