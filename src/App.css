@@ -27,39 +27,35 @@
 .App-link {
   color: #61dafb;
 }
-
+.logo {
+  width: 150px;
+  h1 {
+    font-size: 20px;
+  }
+}
 .main-container {
-  background-image: linear-gradient(rgba(8, 8, 8, 0.721),
-  rgba(8, 8, 8, 0.45)), url("https://websitedemos.net/construction-company-02/wp-content/uploads/sites/977/2021/11/hero-image-min.jpg");
+  background-image: linear-gradient(
+      rgba(33, 45, 69, 0.8),
+      rgba(33, 45, 69, 0.8)
+    ),
+    url("https://websitedemos.net/construction-company-02/wp-content/uploads/sites/977/2021/11/hero-image-min.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   display: flex;
   flex-direction: column;
   height: 900px;
-}
-
-.center {
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-  padding-bottom: 180px;
-}
-
-@media screen and (max-width: 600px) {
-  .center {
-    width: 90% !important;
-  }
+  background-position: center;
 }
 
 .header {
-  color: yellow;
+  color: orange;
   display: flex;
   font-weight: semi-bold;
-  display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px 0;
+  border-bottom: gray 0.25px solid;
 
   div {
     display: flex;
@@ -67,41 +63,146 @@
 }
 
 .heading {
+  gap: 50px;
+  margin-top: 100px;
+  color: white;
+  p {
+    font-size: 15px;
+  }
+}
+
+.heading h1:first-child {
+  font-size: 24px;
+}
+
+.heading h1:nth-child(2) {
   font-size: 90px;
   color: white;
   font-weight: bold;
 }
-
-.empty-container{
-  gap: 25px;
+@media screen and (min-width: 1100px) {
+  .card {
+    width: 100% !important;
+    padding: 50px !important;
+  }
+}
+.button-heading {
   padding: 40px 0;
 }
+@media screen and (min-width: 750px) {
+  .details-div {
+    width: 50% !important;
+    padding: 25px !important;
+  }
+}
+@media screen and (max-width: 750px) {
+  .fourth-div {
+    display: block !important;
+  }
+  .details-div {
+    padding: 25px !important;
+  }
+  .feed-div {
+    flex-direction: column;
+  }
+  .banner-container {
+    display: block !important;
+  }
+  .button-heading {
+    flex-direction: column;
+    align-items: start !important;
+    gap: 20px;
+    padding: 20px 0;
+  }
+  .card-container {
+    flex-direction: column;
+  }
+  .gray-div {
+    height: 1700px !important;
+  }
+  .services {
+    display: none !important;
+  }
+  .main-container {
+    height: 750px;
+  }
+  .heading h1:nth-child(2) {
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+  }
+}
 
+.empty-container {
+  gap: 25px;
+  padding: 70px 0;
+}
+.small-header {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-elements {
+  color: white;
+  display: flex;
+  font-size: 15px;
+  gap: 15px;
+  p {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  p:hover {
+    color: orange;
+  }
+}
+.button-container {
+  margin-top: 50px;
+}
 .button {
-  width: 150px;
-  height: 35px;
-  border-radius: 8px;
+  width: 185px;
+  height: 45px;
+  border: none;
+  color: #212d45;
+  font-weight: bold;
+  background: orange;
+  cursor: pointer;
+}
+.transparent-button {
+  margin-left: 50px;
+  width: 185px;
+  height: 45px;
   border: none;
   color: white;
   font-weight: bold;
-  background: orange;
+  background: transparent;
+  border: 1px solid white;
+  cursor: pointer;
 }
 
 .black-button {
-  width: 150px;
-  height: 35px;
-  border-radius: 8px;
+  width: 185px;
+  height: 45px;
   border: none;
-  background: gray;
+  background: #212d45;
   color: white;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+.font-24 {
+  font-size: 24px;
 }
 
 .image-container {
   gap: 15px;
 
   img {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
   }
 }
 
@@ -110,32 +211,44 @@
   height: 50px;
 }
 
-.vertical-border {
-  border-right: 3px solid white;
-  border-radius: 2px;
-  width: 190px;
-}
-
 .white {
   color: white;
-
 }
 
 .second-div {
   display: flex;
-  width: 70%;
   margin-right: auto;
   margin-left: auto;
   position: relative;
-  top: -100px;
-  height: 350px;
+  top: -80px;
+  max-width: 1240px;
+  width: 100%;
 }
 
+@media screen and (max-width: 1250px) {
+  .second-div {
+    display: block;
+    width: 100%;
+  }
+}
 .white-div {
   background-color: white;
-  padding: 30px;
-  border: 1px solid grey;
-  border-radius: 0 10px 10px 0;
+  div {
+    div {
+      border: 1px solid lightgray;
+      width: 100%;
+      padding: 50px;
+    }
+  }
+}
+
+.orange-div {
+  background-color: orange;
+  padding: 50px;
+  gap: 12px;
+}
+.orange-div h1:first-child {
+  font-size: 24px;
 }
 
 .construction {
@@ -143,43 +256,36 @@
 }
 
 @media screen and (max-width: 700px) {
+  .white-div {
+    background-color: white;
+    div {
+      display: block;
+      div {
+        padding: 0;
+        h1 {
+          padding: 10px 25px;
+        }
+        p {
+          padding: 10px 25px;
+        }
+      }
+    }
+  }
+  .font-40 {
+    font-size: 30px !important;
+  }
+
   .construction {
     display: block;
-  }
-
-  .second-div {
-    display: block;
-    width: 90%;
-  }
-
-  .orange-div {
-    border-radius: 10px 10px 0 0 !important;
-    width: 90% !important;
-  }
-
-  .white-div {
-    border-radius: 0 0 10px 10px;
-    width: 90% !important;
-  }
-
-  .third-div {
-    width: 90% !important;
   }
 }
 
 .third-div {
   display: flex;
   flex-direction: column;
-  width: 70%;
   margin-right: auto;
   margin-left: auto;
-}
-
-.orange-div {
-  width: 48%;
-  background-color: orange;
-  border-radius: 10px 0 0 10px;
-  padding: 30px;
+  gap: 30px;
 }
 
 .flex {
@@ -189,6 +295,10 @@
 .width-full {
   width: 100%;
 }
+.image-icon {
+  width: 20px;
+  height: 20px;
+}
 
 .items-center {
   align-items: center;
@@ -197,99 +307,46 @@
 .space-between {
   justify-content: space-between;
 }
-
-.image {
-  width: 400px;
-  height: 300px;
+.process-container {
+  width: 380px;
+  gap: 15px;
+  img {
+    height: 250px;
+  }
 }
-
 @media screen and (max-width: 500px) {
-  .first-construction-div{
-    padding: 0 !important;
+  .quality-heading {
+    display: block;
+    h1 {
+      margin-bottom: 20px;
+    }
   }
-  .second-construction-div{
-    padding: 0 !important;
+  .orange-div {
+    padding: 25px;
   }
-  .third-construction-div{
-    padding: 0 !important;
+  .heading h1:nth-child(2) {
+    font-size: 35px;
   }
-  .fourth-construction-div{
-    padding: 0 !important;
+  .heading h1:first-child {
+    font-size: 20px;
   }
-  .gray-div{
-    height: 1000px !important;
+  .transparent-button {
+    margin-left: 0px;
+    margin-top: 10px;
   }
   .input {
     height: 30px !important;
-  }
-
-  .details-div {
-    width: 100% !important;
-    height: 200px !important;
-  }
-
-  .orange-div {
-    padding: 15px;
-  }
-
-  .white-div {
-    padding: 15px;
-  }
-
-  .faq-form {
-    padding: 25px !important;
-  }
-
-  h1 {
-    font-size: 25px !important;
   }
 
   p {
     font-size: 15px !important;
   }
 
-  .image {
+  .process-container {
     width: 90% !important;
-    height: 200px;
-  }
-
-  .card {
-    height: 150px;
-    width: 80% !important;
-  }
-
-  .card-container {
-    display: block !important;
-    gap: 15px;
-  }
-
-  .fourth-div {
-    display: block !important;
-  }
-
-  .first-image {
-    width: 100% !important;
-    padding: 10px 0 !important;
-  }
-
-  .second-image {
-    width: 100% !important;
-    padding: 10px 0 !important;
-  }
-
-  .first-image-div {
-    height: 250px !important;
-    width: 90% !important;
-  }
-
-  .second-image-div {
-    height: 250px !important;
-    width: 90% !important;
-  }
-
-  .third-image-div {
-    height: 250px !important;
-    width: 90% !important;
+    img {
+      height: 200px;
+    }
   }
 }
 
@@ -309,66 +366,68 @@
 }
 
 .orange-text {
-  color: orange;
+  color: #ffb923;
 }
 
-.first-image {
-  background-image: linear-gradient(rgba(55, 0, 255, 0.45),
-      rgba(55, 0, 255, 0.45)), url("https://websitedemos.net/construction-company-02/wp-content/uploads/sites/977/2021/11/img3-min.jpg");
+.banner-image {
+  width: 500px;
+  gap: 35px;
+  display: flex;
+  flex-direction: column;
+}
+.banner {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #000;
   width: 50%;
-  padding: 25px;
   background-position: center;
   height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 100px;
-  gap: 30px;
+  align-items: center;
+}
+.first-image {
+  background-image: linear-gradient(
+      rgba(33, 45, 69, 0.8),
+      rgba(33, 45, 69, 0.8)
+    ),
+    url("https://websitedemos.net/construction-company-02/wp-content/uploads/sites/977/2021/11/img3-min.jpg");
 }
 
 .second-image {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: linear-gradient(rgba(255, 0, 0, 0.45),
-      rgba(255, 0, 0, 0.45)), url("../public//images/image-4.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 50%;
-  padding: 25px;
-  height: 500px;
-  background-position: center;
-  padding-left: 100px;
-  gap: 30px;
-}
-
-.card-container {
-  display: flex;
-  width: 100%;
+  background-image: linear-gradient(
+      rgba(255, 192, 61, 0.8),
+      rgba(255, 192, 61, 0.8)
+    ),
+    url("https://websitedemos.net/construction-company-02/wp-content/uploads/sites/977/2021/11/service-1.jpg");
 }
 
 .center-div {
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .text-center {
   text-align: center;
 }
-
+.card-container {
+  gap: 20px;
+}
 .card {
-  width: 100%;
-  height: 250px;
+  gap: 85px;
   border: 1px solid grey;
-  border-radius: 10px;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: end;
-  padding: 20px;
+  padding: 25px;
+}
+.founder-heading {
+  width: 59%;
 }
 
 .fifth-div {
@@ -377,101 +436,38 @@
 }
 
 .gray-div {
-  background-color: lightgray;
+  background-color: #f5f5f5;
   width: 50%;
   height: 700px;
   display: block;
+  position: relative;
+  margin-right: auto;
 }
-
-@media screen and (max-width: 1400px) {
-.gray-div{
-  height: 1400px;
-}
-  .person-div {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-}
-
-.person-div {
-  width: 70%;
-  display: flex;
-  justify-content: space-between;
-  color: white;
-}
-
-.services {
-  gap: 15px;
-  display: block;
-}
-
-@media screen and (max-width: 750px) {
-  .services {
-    display: none !important;
-  }
-  .details-div{
-    width: 100% !important;
-  }
-}
-
-@media screen and (max-width: 1650px) {
-  .person-div {
-    width: 90%;
-  }
-
-}
-
-@media screen and (max-width: 1400px) and (min-width:500px) {
-  .first-image-div {
-    height: 400px !important;
-  }
-
-  .second-image-div {
-    height: 400px !important;
-  }
-
-  .third-image-div {
-    height: 400px !important;
-  }
-}
-
-.first-image-div {
-  background-image: url("https://websitedemos.net/construction-company-02/wp-content/uploads/sites/977/2021/11/f-1.jpg");
+.candidate-image {
   background-size: cover;
   height: 450px;
-  width: 380px;
-  border-radius: 8px;
+  width: 100%;
+  border-radius: 3px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  background-position: center;
+}
+.first-image-div {
+  background-image: url("https://websitedemos.net/construction-company-02/wp-content/uploads/sites/977/2021/11/f-1.jpg");
 }
 
 .second-image-div {
   background-image: url("https://websitedemos.net/construction-company-02/wp-content/uploads/sites/977/2021/11/f-3.jpg");
-  background-size: cover;
-  height: 450px;
-  width: 380px;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 
 .third-image-div {
   background-image: url("https://websitedemos.net/construction-company-02/wp-content/uploads/sites/977/2021/11/f-2.jpg");
   background-size: cover;
-  height: 450px;
-  width: 380px;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 
 .candidate-div {
   position: absolute;
-  width: 100%;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -481,61 +477,39 @@
 .justify-center {
   justify-content: center;
 }
-
-.first-construction-div {
-  background-image: url("https://websitedemos.net/construction-company-02/wp-content/uploads/sites/977/2021/11/img1-min.jpg");
+.construction-image {
   background-size: cover;
-  height: 350px;
-  width: 100%;
+  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   background-position: center;
-  padding: 25px;
+}
+.first-construction-div {
+  background-image: url("https://websitedemos.net/construction-company-02/wp-content/uploads/sites/977/2021/11/img1-min.jpg");
 }
 
 .second-construction-div {
   background-image: url("https://websitedemos.net/construction-company-02/wp-content/uploads/sites/977/2021/11/img2-min.jpg");
-  background-size: cover;
-  height: 350px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  background-position: center;
-  padding: 25px;
 }
 
 .fourth-construction-div {
-
   background-image: url("https://websitedemos.net/construction-company-02/wp-content/uploads/sites/977/2021/11/img4-min.jpg");
-  background-size: cover;
-  height: 350px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  background-position: center;
-  padding: 25px;
-
 }
 
 .third-construction-div {
   background-image: url("https://websitedemos.net/construction-company-02/wp-content/uploads/sites/977/2021/11/img3-min.jpg");
-  background-size: cover;
-  height: 350px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  background-position: center;
-  padding: 25px;
 }
 
 .width-70 {
-  width: 70%;
+  max-width: 1240px;
+  width: 100%;
 }
-
+@media screen and (max-width: 1400px) {
+  .width-70 {
+    width: 90%;
+  }
+}
 .person-icon {
   width: 100px;
   height: 100px;
@@ -543,83 +517,210 @@
 }
 
 .details-div-container {
-  flex-wrap: wrap;
+  margin-top: 70px;
   display: flex;
+  flex-direction: column;
   gap: 30px;
   justify-content: center;
 }
 
 .details-div {
-  background-color: #212D45;
-  border-bottom: 5px solid orange;
-  width: 45%;
-  height: 300px;
+  background-color: #212d45;
+  border-bottom: 10px solid orange;
   color: white;
-  padding: 20px 0;
-  margin: 20px 0;
+  padding: 50px;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.details-div div:first-child {
+  text-align: left;
+}
+.feed-div {
+  h1 {
+    font-size: 24px;
+  }
 }
 
 .faq-div {
-  background-color: lightgray;
+  background-color: #f5f5f5;
   display: flex;
+  margin-top: 200px;
+  padding-bottom: 80px;
 }
 
 .faq-form {
-  background-color: #212D45;
-  width: 500px !important;
-  border-radius: 10px;
-  padding: 50px;
+  background-color: #212d45;
+  max-width: 600px;
+  width: 100%;
   position: relative;
-  top: -70px;
+  top: -50px;
+}
+
+.faq-form div:first-child {
+  padding: 50px;
 }
 
 @media screen and (max-width: 1100px) {
+  .person-div {
+    flex-direction: column;
+    width: 100% !important;
+  }
+  .questions {
+    margin-top: 50px !important;
+    width: 90%;
+  }
+  .questions-div {
+    width: 100% !important;
+  }
   .faq-form {
-    width: 90% !important;
+    top: 0;
+    max-width: 100%;
+  }
+  .banner {
+    width: 100%;
+  }
+  .founder-heading {
+    width: 80%;
+  }
+  .banner-image {
+    width: 90%;
+  }
+}
+
+.empty-heading {
+  gap: 30px;
+}
+.questions {
+  margin-top: 100px;
+}
+.icon-image {
+  height: 14px;
+  width: 14px;
+  cursor: pointer;
+}
+.questions-div {
+  border: 1px solid gray;
+  width: 500px;
+  margin-top: 50px;
+  div {
+    div {
+      padding: 20px;
+      border-bottom: 1px solid #212d45;
+      p {
+        font-size: 14px;
+        font-weight: 700;
+      }
+    }
+  }
+  color: black;
+}
+
+.blue-heading {
+  color: #212d45;
+}
+.font-40 {
+  font-size: 40px;
+}
+.gap-10 {
+  gap: 10px;
+}
+.gap-25 {
+  gap: 25px;
+}
+.padding-25 {
+  padding: 25px;
+}
+.blue-text-heading {
+  color: #212d45;
+  font-size: 24px;
+}
+.footer {
+  background-color: #212d45;
+  color: white;
+}
+.input {
+  height: 50px;
+  border: none;
+  border-radius: 2px;
+  padding-left: 15px;
+}
+
+.footer-section {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+.single-footer {
+  width: 263px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.footer-details {
+  padding: 100px 0px 45px;
+  justify-content: space-between;
+  gap: 5%;
+}
+
+@media screen and (max-width: 1100px) {
+  .footer-details {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .footer-section {
+    text-align: center;
+    width: 100%;
   }
   .empty-heading {
     display: block !important;
   }
 }
-
-.footer {
-  background-color: #212D45;
-  color: white;
-  padding: 20px 0;
+.copy-div {
+  padding: 30px 0;
 }
-
-.input {
-  height: 50px;
-  border: none;
-  border-radius: 2px;
-}
-
-.footer-section {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  flex-direction: row;
-}
-
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 700px) {
+  .copy-div {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+    gap: 10px;
+  }
+  .footer-details {
+    padding: 60px 0;
+  }
   .footer-section {
     flex-direction: column;
+    align-items: center;
+    gap: 30px;
   }
-  .banner-container{
-    display: block !important;
+  .card {
+    h1 {
+      font-size: 20px;
+    }
   }
-}
-
-.footer-container {
-  padding-bottom: 20px;
-  gap: 10%;
-}
-
-@media screen and (max-width: 700px) {
-  .footer-container {
+  .empty-container {
+    padding: 50px 0;
+  }
+  .questions-div {
     width: 90% !important;
   }
-  .special-div{
+  .contact-text {
+    display: none;
+  }
+  .special-div {
     display: none !important;
+  }
+  .small-header {
+    display: none !important;
+  }
+  .special-icon {
+    display: none !important;
+  }
+  .menu-icon {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    display: block !important;
   }
 }
